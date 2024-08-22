@@ -8,11 +8,11 @@ Este é um projeto de prática utilizando o design system **Elementum 2.0** com 
 
 ## 🔨 Tecnologias Utilizadas
 
-🔷 **Next.js**: Framework React
-🔷 **TypeSCript**: Superset de JavaScript que adiciona tipagem estática opcional, ajudando a detectar erros durante o desenvolvimento e proporcionando uma melhor experiência com ferramentas de edição de código
-🔷 **TailwindCSS**: Framework CSS com classes utilitárias
-🔷 **Storybook**: Ferramenta para desenvolvimento de componentes isolados e documentação.
-🔷 **Elementum 2.0**: Design system utilizado no projeto.
+🔷 **Next.js**: Framework React <br>
+🔷 **TypeSCript**: Superset de JavaScript que adiciona tipagem estática opcional, ajudando a detectar erros durante o desenvolvimento e proporcionando uma melhor experiência com ferramentas de edição de código <br>
+🔷 **TailwindCSS**: Framework CSS com classes utilitárias <br>
+🔷 **Storybook**: Ferramenta para desenvolvimento de componentes isolados e documentação. <br>
+🔷 **Elementum 2.0**: Design system utilizado no projeto. <br>
 
 ---
 
