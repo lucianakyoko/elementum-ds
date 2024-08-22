@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Design System no Front-end com Storybook e Next.js
 
-## Getting Started
+Este é um projeto de prática utilizando o design system **Elementum 2.0** com Storybook e Next.js. O objetivo deste projeto é demonstrar a integração de um design system em um ambiente de desenvolvimento front-end moderno.
 
-First, run the development server:
+## 🔨 Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Framework React
+- **TailwindCSS**: Framework CSS com classes utilitárias
+- **Storybook**: Ferramenta para desenvolvimento de componentes isolados e documentação.
+- **Elementum 2.0**: Design system utilizado no projeto.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📄 Atribuição
+Este projeto utiliza o design system **Elementum 2.0** disponível em [Figma Community](https://www.figma.com/community). De acordo com a licença [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), a atribuição ao autor original foi feita conforme abaixo:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Design System: [Elementum 2.0](https://www.figma.com/community/file/1366156810458494400)
+Autor: [Sajal Jahan](https://www.figma.com/@ruvojahan)
+Licença: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
