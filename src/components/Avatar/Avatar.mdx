@@ -1,25 +1,60 @@
-import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import { Meta, Primary, Canvas, Controls, Story  } from '@storybook/addon-docs';
 import  Avatar  from './Avatar';
 import * as AvatarStories from './Avatar.stories';
 
 <Meta title="Design System/Atoms/Avatar" of={AvatarStories}/>
 
 # Avatar
+<p style={{paddingBottom: '16px'}}>
+  Avatars are graphical representations of users or characters within a digital environment, commonly used in user interfaces (UIs) for personalization, identification, and engagement. 
+</p>
 
-Avatars are graphical representations of users or characters within a digital environment, commonly used in user interfaces (UIs) for personalization, identification, and engagement. 
+## Available Sizes
 
-<Canvas name='Info' of={AvatarStories.Default}/>
+<div style={{ 
+  width: '60%',
+  padding: '0',
+  display: 'grid', 
+  gridTemplateColumns: 'repeat(5, 1fr)', 
+  gap: '20px',
+  justifyItems: 'center',
+  alignItems: 'center'
+}}>
+  {['xs3x', 'xs2x', 'xs', 'sm', 'sm2x', 'sm3x', 'md', 'md2x', 'md3x', 'lg', 'lg2x', 'lg3x', 'xl', 'xl2x', 'xl3x'].map((size) => (
+    <div key={size} style={{ 
+      textAlign: 'center' ,
+      display: 'flex',
+      flexDirection: 'column',
+    }}>
+      <p
+        style={{
+          padding: '0',
+          lineHeight: '0'
+        }}
+      >{size}</p>
+      <Avatar size={size} />
+    </div>
+  ))}
+</div>
 
 ## Use Cases
 
 ### 1. Personalization
-Avatars allow users to personalize their profiles or accounts, adding a sense of identity and ownership to their digital presence. Users can choose or create avatars that reflect their personality, preferences, or professional identity.
+<p style={{paddingBottom: '16px'}}>
+  Avatars allow users to personalize their profiles or accounts, adding a sense of identity and ownership to their digital presence. Users can choose or create avatars that reflect their personality, preferences, or professional identity.
+</p>
 
 ### 2. Itentification
-Avatars serve as visual identifiers, helping users distinguish between different accounts, participants in a discussion, or contributors to a collaborative project. They provide a visual cue that facilitates recognition and association.
+<p style={{paddingBottom: '16px'}}>
+  Avatars serve as visual identifiers, helping users distinguish between different accounts, participants in a discussion, or contributors to a collaborative project. They provide a visual cue that facilitates recognition and association.
+</p>
 
 ### 3. Social Interaction
-Avatars facilitate social interaction and engagement within digital communities, social networking platforms, and multiplayer games. They create a sense of presence and connection by representing users in virtual spaces and interactions.
+<p style={{paddingBottom: '16px'}}>
+  Avatars facilitate social interaction and engagement within digital communities, social networking platforms, and multiplayer games. They create a sense of presence and connection by representing users in virtual spaces and interactions.
+</p>
 
 ### 4. Scalability
-Consistent avatar design enhances visual coherence and user experience across the UI. Designers establish style guidelines for avatars, including dimensions, proportions, and visual elements, to maintain consistency and brand alignment.
+<p style={{paddingBottom: '16px'}}>
+  Consistent avatar design enhances visual coherence and user experience across the UI. Designers establish style guidelines for avatars, including dimensions, proportions, and visual elements, to maintain consistency and brand alignment.
+</p>

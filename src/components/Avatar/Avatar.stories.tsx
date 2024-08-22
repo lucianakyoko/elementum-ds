@@ -21,4 +21,3 @@ export default meta;
 export const Default:StoryObj<AvatarProps> = {
   args: {}
 };
-
