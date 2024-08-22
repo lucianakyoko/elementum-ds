@@ -1,0 +1,90 @@
+import { Meta, Title } from '@storybook/blocks';
+import Icon from './Icon';
+import * as IconStories from './Icon.stories';
+
+
+<Meta title='Design System/Atoms/Icon' of={IconStories} />
+
+# Iconography
+Icons are essential visual elements in user interface (UI) design, serving as intuitive representations of actions, functions, or concepts. Here's a detailed look at their significance and application.
+
+## Icon family
+- **Icon family:** Feather Icons
+- **Download:** [Link](https://feathericons.com/)
+- **Documentation:** [GitHub](https://github.com/feathericons/react-feather?tab=readme-ov-file)
+
+<div style={{paddingBottom:'32px'}}></div>
+
+## Icon Sizes
+<div style={{ 
+  width: '60%',
+  paddingTop:'16px',
+  paddingBottom:'32px',
+  display: 'grid', 
+  gridTemplateColumns: 'repeat(5, 1fr)', 
+  gap: '20px',
+  justifyItems: 'center',
+  alignItems: 'center'
+}}>
+  {['xs', 'sm', 'md', 'md2x', 'md3x', 'lg', 'lg2x', 'lg3x', 'xl', 'xl2x', 'xl3x'].map(size => (
+    <div 
+      key={size} style={{
+        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+    >
+      <p style={{
+        padding: '0',
+        lineHeight: '0'
+      }}>{size}</p>
+      <Icon size={size} weight='regular' name='thumbs-up' />
+    </div>
+  ))}
+</div>
+
+## Icon Weights
+<div style={{ 
+  width: '60%',
+  paddingTop:'16px',
+  paddingBottom:'32px',
+  display: 'flex', 
+  gap: '20px',
+  justifyItems: 'center',
+  alignItems: 'center'
+}}>
+  {['thin', 'regular', 'bold'].map(weight => (
+    <div 
+      key={weight} style={{
+        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+    >
+      <p style={{
+        padding: '0',
+        lineHeight: '0'
+      }}>{weight}</p>
+      <Icon size='lg' weight={weight} name='thumbs-up' />
+    </div>
+  ))}
+</div>
+
+
+## Use Cases
+### 1. Visual Communication
+<p style={{paddingBottom: '16px'}}>
+  Icons provide quick and intuitive visual cues, aiding users in understanding the purpose or functionality of UI elements. For instance, a magnifying glass icon represents search functionality, while a trash can icon signifies deletion.
+</p>
+### 2. Space Efficiency
+<p style={{paddingBottom: '16px'}}>
+  Icons help conserve screen real estate by conveying information concisely. They occupy less space compared to text labels, making them ideal for mobile interfaces and situations where screen space is limited.
+</p>
+### 3. Internationalization
+<p style={{paddingBottom: '16px'}}>
+  Icons transcend language barriers, making them suitable for global audiences. They offer a universal means of communication, allowing users from diverse linguistic backgrounds to interact with the interface effectively.
+</p>
+### 4. Brand Representation
+<p style={{paddingBottom: '16px'}}>
+  Custom icons can reinforce brand identity and personality. Unique, branded icons contribute to a cohesive visual language that aligns with the brand's style and values.
+</p>

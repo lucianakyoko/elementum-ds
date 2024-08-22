@@ -1,0 +1,46 @@
+import { Meta, Title, IconGallery, IconItem } from '@storybook/blocks';
+import Icon from './Icon';
+import { iconNames } from './iconsList';
+
+<Meta title='TOKENS/ Icons'  />
+
+# Feather Icons
+A small, visually intuitive symbol used in user interfaces to represent actions, functions, or objects. It enhances usability, facilitates navigation, and adds visual interest to the design.
+
+## Regular
+<IconGallery>
+  {
+    iconNames.map(iconName => (
+      <IconItem name={iconName}>
+        <Icon name={iconName} weight="regular" />
+      </IconItem>
+    ))
+  }
+</IconGallery>
+
+<div style={{paddingBottom:'32px'}}></div>
+
+## Thin
+<IconGallery>
+  {
+    iconNames.map(iconName => (
+      <IconItem name={iconName}>
+        <Icon name={iconName} weight="thin" />
+      </IconItem>
+    ))
+  }
+</IconGallery>
+
+<div style={{paddingBottom:'32px'}}></div>
+
+## Bold
+
+<IconGallery>
+  {
+    iconNames.map(iconName => (
+      <IconItem name={iconName}>
+        <Icon name={iconName} weight="bold" />
+      </IconItem>
+    ))
+  }
+</IconGallery>
