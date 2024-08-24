@@ -182,7 +182,7 @@ const Typography = ({
   text,
   variant,
   element = 'p',
-  className,
+  className='',
 }: TypographyProps) => {
   const Element = element as keyof JSX.IntrinsicElements;
   const styles = typographyMap[variant] || {};
