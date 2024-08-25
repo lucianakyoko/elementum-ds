@@ -1,7 +1,8 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Icon, { iconSizeMap, IconProps } from "./Icon";
+import Icon, { iconSizeMap, strokeWidthMap, IconProps } from "./Icon";
 
-const sizes = Object.keys(iconSizeMap)
+const sizes = Object.keys(iconSizeMap);
+const weights = Object.keys(strokeWidthMap);
 
 const meta: Meta<IconProps> = {
   title: 'Design System/Atoms/Icon',
@@ -16,7 +17,7 @@ const meta: Meta<IconProps> = {
       control: {
         type: 'select',
       },
-      options: ['light', 'regular', 'bold']
+      options: weights,
     },
     size: {
       control: {
@@ -24,6 +25,11 @@ const meta: Meta<IconProps> = {
       },
       options: sizes,
     },
+    color: {
+      control: {
+        type: 'color'
+      }
+    }
   },
 };
 
@@ -34,6 +40,8 @@ type Story = StoryObj<typeof Icon>;
 export const Default: Story = {
   args: {
     name: 'trash',
+    weight: 'regular',
+    size: 'md'
   }
 };
 

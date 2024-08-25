@@ -14,7 +14,21 @@ Icons are essential visual elements in user interface (UI) design, serving as in
 - **Documentation:** [GitHub](https://github.com/feathericons/react-feather?tab=readme-ov-file)
 
 <div style={{paddingBottom:'32px'}}></div>
+## Examples
+**Code:**
+```
+//App.tsx
 
+
+<Icon size='lg2x' color='9569FF' weight='thin' />
+```
+see: ```TOKENS/Icons``` to get icons name
+
+**Result:**
+<Icon size='lg2x' weight='thin' color='#808080' name='coffee' />
+
+
+<div style={{paddingBottom:'32px'}}></div>
 ## Icon Sizes
 <div style={{ 
   width: '60%',
@@ -38,7 +52,7 @@ Icons are essential visual elements in user interface (UI) design, serving as in
         padding: '0',
         lineHeight: '0'
       }}>{size}</p>
-      <Icon size={size} weight='regular' name='thumbs-up' />
+      <Icon size={size} weight='regular' name='thumbs-up' color='#808080' />
     </div>
   ))}
 </div>
@@ -65,7 +79,7 @@ Icons are essential visual elements in user interface (UI) design, serving as in
         padding: '0',
         lineHeight: '0'
       }}>{weight}</p>
-      <Icon size='lg' weight={weight} name='thumbs-up' />
+      <Icon size='lg' weight={weight} name='thumbs-up' color='#808080' />
     </div>
   ))}
 </div>

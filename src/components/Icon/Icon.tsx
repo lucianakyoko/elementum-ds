@@ -1,10 +1,11 @@
-import NextImage from "next/image";
+import React from 'react';
+import * as icons from 'react-feather';
 
-export type IconProps = {
-  name: string;
-  weight: 'thin' | 'regular' | 'bold';
-  size: keyof typeof iconSizeMap;
-}
+const iconMap: { [key: string]: React.ComponentType<any> } = {};
+
+Object.keys(icons).forEach((iconName) => {
+  iconMap[toPascalCase(iconName)] = (icons as any)[iconName];
+});
 
 export const iconSizeMap = {
   xs: 12,
@@ -17,21 +18,41 @@ export const iconSizeMap = {
   lg3x: 72,
   xl: 84,
   xl2x: 96,
-  xl3x: 114
+  xl3x: 114,
 };
 
-const Icon = ({ name, weight='regular', size='md2x' }:IconProps) => {
-  const iconPath = `/icon/feather-${weight}/${name}.svg`;
-  const iconSize = iconSizeMap[size];
+export const strokeWidthMap = {
+  thin: 1,
+  regular: 2,
+  bold: 3,
+};
 
-  return (
-    <NextImage
-      src={iconPath}
-      alt="icon"
-      width={iconSize}
-      height={iconSize}
-    />
-  );
+export interface IconProps {
+  name: string;
+  size?: keyof typeof iconSizeMap;
+  color?: string;
+  weight: keyof typeof strokeWidthMap;
+}
+
+function toPascalCase(name: string): string {
+  return name
+    .split('-') 
+    .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+    .join('');
+}
+
+const Icon: React.FC<IconProps> = ({ name, size='md2x', weight='regular', color = 'currentColor' }) => {
+  const iconKey = toPascalCase(name);
+  const IconComponent = iconMap[iconKey];
+  const iconSize = iconSizeMap[size];
+  const strokeWidth = strokeWidthMap[weight];
+
+  if (!IconComponent) {
+    console.warn(`Icon "${name}" not found!`);
+    return null; 
+  }
+
+  return <IconComponent size={iconSize} color={color} strokeWidth={strokeWidth} />;
 };
 
 export default Icon;
