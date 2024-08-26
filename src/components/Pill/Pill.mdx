@@ -1,0 +1,121 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import Pill from './Pill';
+
+import * as PillStories from './Pill.stories.tsx';
+
+<Meta of={PillStories} />
+
+# Pill
+<p>
+  Pills in UI/UX design are small, rounded rectangular elements often used to represent items such as tags, categories, or navigation options. They typically contain text or icons and are visually distinct from surrounding elements due to their shape and often contrasting background color.
+</p>
+
+## Pill props
+- text,
+- variant,
+- color,
+- corner,
+- size
+
+## Examples
+### Variant:
+<div className='flex items-center gap-6 text-white pb-9'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>default</span>
+    <Canvas of={PillStories.DefaultVariant}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>lightShadow</span>
+    <Canvas of={PillStories.LightShadowVariant}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>strokeStrong</span>
+    <Canvas of={PillStories.StrokeStrongVariant}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>strokeSoft</span>
+    <Canvas of={PillStories.StrokeSoftVariant}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>softFillSoftStroke</span>
+    <Canvas of={PillStories.SoftFillSoftStrokeVariant}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>soft</span>
+    <Canvas of={PillStories.SoftVariant}/>
+  </div>
+</div>
+
+--- 
+
+### Color:
+<div className='flex items-center flex-wrap gap-6 text-white pb-9'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>primary</span>
+    <Canvas of={PillStories.PrimaryColor}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>secondary</span>
+    <Canvas of={PillStories.SecondaryColor}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>tertiary</span>
+    <Canvas of={PillStories.TertiaryColor}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>positive</span>
+    <Canvas of={PillStories.PositiveColor}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>negative</span>
+    <Canvas of={PillStories.NegativeColor}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>warning</span>
+    <Canvas of={PillStories.WarningColor}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>dark</span>
+    <Canvas of={PillStories.DarkColor}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>readOnly</span>
+    <Canvas of={PillStories.ReadonlyColor}/>
+  </div>
+</div>
+
+---
+
+### Corner:
+<div className='flex items-center gap-6 text-white pb-9'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>sharp</span>
+    <Canvas of={PillStories.SharpCorner}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>soft</span>
+    <Canvas of={PillStories.SoftCorner}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>smooth</span>
+    <Canvas of={PillStories.SmoothCorner}/>
+  </div>
+</div>
+
+---
+
+### Size:
+<div className='flex items-center gap-6 text-white pb-9'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>small</span>
+    <Canvas of={PillStories.Small}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>medium</span>
+    <Canvas of={PillStories.Medium}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>large</span>
+    <Canvas of={PillStories.Large}/>
+  </div>
+</div>
