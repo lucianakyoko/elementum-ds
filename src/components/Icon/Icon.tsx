@@ -41,7 +41,7 @@ function toPascalCase(name: string): string {
     .join('');
 }
 
-const Icon: React.FC<IconProps> = ({ name, size='md2x', weight='regular', color = 'currentColor' }) => {
+const Icon: React.FC<IconProps> = ({ name, size='md2x', weight='regular', color='currentColor' }) => {
   const iconKey = toPascalCase(name);
   const IconComponent = iconMap[iconKey];
   const iconSize = iconSizeMap[size];

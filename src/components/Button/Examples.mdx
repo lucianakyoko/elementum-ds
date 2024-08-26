@@ -1,0 +1,148 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import Button from './Button.tsx';
+import * as ButtonStories from './Button.stories.tsx';
+
+
+<Meta of={ButtonStories}/>
+
+# Buttons
+
+## Examples
+**Button props:**
+- layout
+- colorType
+- size
+- corner
+- variant
+- text
+- iconName
+
+<div className='pb-4'></div>
+### Layout values
+
+<div className='flex items-center gap-4 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>textAndIcon</span>
+    <Canvas of={ButtonStories.CenteredTextAndIconLayout}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>iconic</span>
+    <Canvas of={ButtonStories.IconicLayout}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>numeric</span>
+    <Canvas of={ButtonStories.NumericLayout}/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+---
+
+### Color Type values
+<div className='flex items-center gap-6 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>primary</span>
+    <Button layout='iconic' colorType='primary'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>secondary</span>
+    <Button layout='iconic' colorType='secondary'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>tertiary</span>
+    <Button layout='iconic' colorType='tertiary'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>positive</span>
+    <Button layout='iconic' colorType='positive'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>negative</span>
+    <Button layout='iconic' colorType='negative'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>warning</span>
+    <Button layout='iconic' colorType='warning'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>dark</span>
+    <Button layout='iconic' colorType='dark'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>readOnly</span>
+    <Button layout='iconic' colorType='readOnly'/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+---
+
+### Sizes values
+<div className='flex items-center gap-6 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>small</span>
+    <Canvas of={ButtonStories.ButtonSmall}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>medium</span>
+    <Canvas of={ButtonStories.ButtonMedium}/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>large</span>
+    <Canvas of={ButtonStories.ButtonLarge}/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+---
+
+### Corner values
+<div className='flex items-center gap-6 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>sharp</span>
+    <Button layout='iconic' colorType='primary' corner='sharp'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>soft</span>
+    <Button layout='iconic' colorType='primary' corner='soft'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>smooth</span>
+    <Button layout='iconic' colorType='primary' corner='smooth'/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+---
+
+### Variant values
+<div className='flex items-center gap-6 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>filled</span>
+    <Button layout='iconic' colorType='primary' variant='filled'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>strokedStrong</span>
+    <Button layout='iconic' colorType='primary' variant='strokedStrong'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>strokedSoft</span>
+    <Button layout='iconic' colorType='primary' variant='strokedSoft'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>softFillAndStroked</span>
+    <Button layout='iconic' colorType='primary' variant='softFillAndStroked'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>softFill</span>
+    <Button layout='iconic' colorType='primary' variant='softFill'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>noStroked</span>
+    <Button layout='iconic' colorType='primary' variant='noStroked'/>
+  </div>
+</div>
