@@ -1,0 +1,149 @@
+import { Meta } from '@storybook/addon-docs';
+import IconBox from './IconBox';
+
+<Meta title='Design System/Molecules/Icon Box/Docs'/>
+
+# Icon Box
+<p>
+  A boxed icon is an icon that is contained within a shape, typically a square or a rectangle. This shape, or "box," serves as a background or container for the icon, providing visual emphasis and context. Boxed icons are commonly used in UI/UX design to create visually distinct and cohesive elements within interfaces. They help to organize and group related icons or content, while also adding a sense of structure and consistency to the design.
+</p>
+
+--- 
+
+## Exemples
+**IconBox props:**
+- iconName
+- colorType
+- corner
+- variant
+- size
+
+<div className='pb-4'></div>
+
+---
+
+### iconNAme values
+check ```TOKENS/ICONS``` to get the icons names
+
+
+<div className='pb-4'></div>
+
+---
+
+### colorType values
+<div className='flex items-center gap-4 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>primary</span>
+    <IconBox colorType='primary' />
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>secondary</span>
+    <IconBox colorType='secondary' />
+    
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>tertiary</span>
+    <IconBox colorType='tertiary' />
+    
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>positive</span>
+    <IconBox colorType='positive' />
+    
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>negative</span>
+    <IconBox colorType='negative' />
+    
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>warning</span>
+    <IconBox colorType='warning' />
+    
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>light</span>
+    <IconBox colorType='light' />
+    
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>dark</span>
+    <IconBox colorType='dark' />
+    
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>readOnly</span>
+    <IconBox colorType='readOnly' />
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+---
+
+### corner values
+<div className='flex items-center gap-4 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>sharp</span>
+    <IconBox colorType='primary' corner='sharp' />
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>soft</span>
+    <IconBox colorType='primary' corner='soft' />
+    
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>smooth</span>
+    <IconBox colorType='primary' corner='smooth'/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+---
+
+### size values
+<div className='flex items-center gap-4 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>small</span>
+    <IconBox colorType='primary' size='small'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>medium</span>
+    <IconBox colorType='primary' size='medium'/>
+    
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>large</span>
+    <IconBox colorType='primary' size='large'/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+---
+
+### variant values
+<div className='flex items-center gap-4 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>filled</span>
+    <IconBox colorType='primary' variant='filled'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>soft</span>
+    <IconBox colorType='primary' variant='soft'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>strokeSoft</span>
+    <IconBox colorType='primary' variant='strokeSoft'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>stroked</span>
+    <IconBox colorType='primary' variant='stroked'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>boldStroke</span>
+    <IconBox colorType='primary' variant='boldStroke'/>  
+  </div>
+</div>
+
