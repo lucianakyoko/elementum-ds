@@ -1,0 +1,132 @@
+import { Meta } from '@storybook/addon-docs';
+import Checkbox from './Checkbox';
+
+<Meta title='Design System/Molecules/Checkbox/Docs'/>
+
+# Checkbox
+<p>
+  A checkbox is a graphical user interface element that allows users to select one or more options from a set of choices. It typically appears as a small square box that can be checked (selected) or unchecked (deselected) by clicking or tapping on it. Checkboxes are commonly used in forms, settings, and interactive interfaces to enable users to make selections or indicate preferences.
+</p>
+
+## Checkbox props
+- checkOptions
+- size
+- stat
+- color
+- onChange
+
+### checkOption values
+<div className='flex items-center gap-6 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>checkbox</span>
+    <Checkbox checkOption='check' checked />
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>radio</span>
+    <Checkbox checkOption='radio' checked />
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+---
+
+### size values
+<div className='flex items-center gap-6 text-white'>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>small</span>
+    <Checkbox checked checkOption='check' size='small'/>
+    <Checkbox checked checkOption='radio' size='small'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>medium</span>
+    <Checkbox checked checkOption='check' size='medium'/>
+    <Checkbox checked checkOption='radio' size='medium'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>large</span>
+    <Checkbox checked checkOption='check' size='large'/>
+    <Checkbox checked checkOption='radio' size='large'/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+---
+
+### stat values
+<div className='flex items-center gap-6 text-white'>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>default</span>
+    <Checkbox checkOption='check' size='small'/>
+    <Checkbox checkOption='radio' size='small'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>focused</span>
+    <Checkbox focused checkOption='check' size='medium'/>
+    <Checkbox focused checkOption='radio' size='medium'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>checked</span>
+    <Checkbox checked checkOption='check' size='large'/>
+    <Checkbox checked checkOption='radio' size='large'/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+---
+
+### color values
+<div className='flex items-center gap-6 text-white'>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>primary</span>
+    <Checkbox checked checkOption='check' color='primary'/>
+    <Checkbox checked checkOption='radio' color='primary'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>secondary</span>
+    <Checkbox checked checkOption='check' color='secondary'/>
+    <Checkbox checked checkOption='radio' color='secondary'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>tertiary</span>
+    <Checkbox checked checkOption='check' color='tertiary'/>
+    <Checkbox checked checkOption='radio' color='tertiary'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>positive</span>
+    <Checkbox checked checkOption='check' color='positive'/>
+    <Checkbox checked checkOption='radio' color='positive'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>negative</span>
+    <Checkbox checked checkOption='check' color='negative'/>
+    <Checkbox checked checkOption='radio' color='negative'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>warning</span>
+    <Checkbox checked checkOption='check' color='warning'/>
+    <Checkbox checked checkOption='radio' color='warning'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>dark</span>
+    <Checkbox checked checkOption='check' color='dark'/>
+    <Checkbox checked checkOption='radio' color='dark'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>readOnly</span>
+    <Checkbox checked checkOption='check' color='readOnly'/>
+    <Checkbox checked checkOption='radio' color='readOnly'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>disabled</span>
+    <Checkbox checked checkOption='check' color='disabled'/>
+    <Checkbox checked checkOption='radio' color='disabled'/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+---
+
