@@ -36,6 +36,6 @@ export default meta;
 
 type Story = StoryObj<typeof IconBox>
 
-export const DefaultIconBox = {
+export const DefaultIconBox: Story = {
   args: {}
 }

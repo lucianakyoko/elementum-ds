@@ -1,8 +1,9 @@
 export type TypographyProps = {
   text: string;
-  variant: keyof typeof typographyMap;
+  variant?: keyof typeof typographyMap;
   element?:  keyof JSX.IntrinsicElements;
   className?: string;
+  style?: React.CSSProperties;
 };
 
 export const typographyMap = {
@@ -180,9 +181,10 @@ export const typographyMap = {
 
 const Typography = ({
   text,
-  variant,
-  element = 'p',
+  variant= 'mdRegular',
+  element= 'p',
   className='',
+  style = {}
 }: TypographyProps) => {
   const Element = element as keyof JSX.IntrinsicElements;
   const styles = typographyMap[variant] || {};
@@ -191,6 +193,7 @@ const Typography = ({
     <Element 
       className={className}
       style={{
+        ...style,
         fontSize: `${styles.fontSize}px`,
         lineHeight: `${styles.lineHeight}px`,
         fontWeight: styles.fontWeight

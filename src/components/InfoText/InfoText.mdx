@@ -1,0 +1,78 @@
+import { Meta } from '@storybook/addon-docs';
+import InfoText from './InfoText';
+
+<Meta title='Design System/Molecules/Info Text' />
+
+# Info Text
+<p>
+  Info text, also known as informational text or descriptive text, provides users with additional context, guidance, or explanation within a user interface. It is often used to clarify complex concepts, provide instructions, or offer helpful tips to enhance user understanding and interaction.
+</p>
+
+## Exemplos
+### props
+- color
+- size
+
+<div className='pb-4'></div>
+
+### color values:
+<div className='flex items-center gap-12 flex-wrap text-white w-[80%]'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>primary</span>
+    <InfoText color='primary'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>secondary</span>
+    <InfoText color='secondary'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>tertiary</span>
+    <InfoText color='tertiary'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>positive</span>
+    <InfoText color='positive'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>negative</span>
+    <InfoText color='negative'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>warning</span>
+    <InfoText color='warning'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>light</span>
+    <InfoText color='light'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>dark</span>
+    <InfoText color='dark'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>gray</span>
+    <InfoText color='gray'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>disabled</span>
+    <InfoText color='disabled'/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+### size values:
+<div className='flex items-center gap-6 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>small</span>
+    <InfoText color='primary' size='small'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>medium</span>
+    <InfoText color='primary' size='medium'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>large</span>
+    <InfoText color='primary' size='large'/>
+  </div>
+</div>

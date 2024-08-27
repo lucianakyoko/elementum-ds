@@ -31,7 +31,7 @@ export interface IconProps {
   name: string;
   size?: keyof typeof iconSizeMap;
   color?: string;
-  weight: keyof typeof strokeWidthMap;
+  weight?: keyof typeof strokeWidthMap;
 }
 
 function toPascalCase(name: string): string {
