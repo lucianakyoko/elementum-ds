@@ -1,0 +1,86 @@
+import { Meta } from '@storybook/addon-docs';
+import ProfileAvatar from './ProfileAvatar';
+
+<Meta title='Design System/Molecules/ Profile Avatar' />
+
+# Profile Avatar
+<p>
+  A profile avatar is a visual representation of a user, typically displayed as a small image or icon associated with their account or profile within an application or website. It serves to personalize the user's identity and provide visual recognition within the interface.
+</p>
+
+## Examples
+### Profile Avatar props
+- size,
+- corner,
+- variant,
+- imageSrc,
+
+### Size Values
+<div className='flex items-center gap-6'>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>small</span>
+    <ProfileAvatar size='small'/>
+    <ProfileAvatar corner='soft'size='small'/>
+    <ProfileAvatar corner='smooth'size='small'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>medium</span>
+    <ProfileAvatar size='medium'/>
+    <ProfileAvatar corner='soft'size='medium'/>
+    <ProfileAvatar corner='smooth'size='medium'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>large</span>
+    <ProfileAvatar size='large'/>
+    <ProfileAvatar corner='soft'size='large'/>
+    <ProfileAvatar corner='smooth'size='large'/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+### corner Values
+<div className='flex items-center gap-6'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>sharp</span>
+    <ProfileAvatar corner='sharp'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>soft</span>
+    <ProfileAvatar corner='soft'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>smooth</span>
+    <ProfileAvatar corner='smooth'/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+### variant Values
+<div className='flex items-center gap-6'>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>default</span>
+    <ProfileAvatar variant='default' corner='sharp'/>
+    <ProfileAvatar variant='default' corner='soft'/>
+    <ProfileAvatar variant='default' corner='smooth'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>story</span>
+    <ProfileAvatar variant='story' corner='sharp'/>
+    <ProfileAvatar variant='story' corner='soft'/>
+    <ProfileAvatar variant='story' corner='smooth'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>onLine</span>
+    <ProfileAvatar variant='onLine' corner='sharp'/>
+    <ProfileAvatar variant='onLine' corner='soft'/>
+    <ProfileAvatar variant='onLine' corner='smooth'/>
+  </div>
+  <div className='flex flex-col gap-2'>
+    <span className='text-slate-800'>away</span>
+    <ProfileAvatar variant='away' corner='sharp'/>
+    <ProfileAvatar variant='away' corner='soft'/>
+    <ProfileAvatar variant='away' corner='smooth'/>
+  </div>
+</div>

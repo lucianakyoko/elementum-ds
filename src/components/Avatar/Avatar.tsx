@@ -1,11 +1,12 @@
-
 import { AvatarImage } from "./AvatarImage";
 import { AvatarIcon } from "./AvatarIcon";
 
-export type AvatarProps = {
-  size?: 'xs3x' | 'xs2x' | 'xs' | 'sm' | 'sm2x' | 'sm3x' | 'md' | 'md2x' | 'md3x' | 'lg' | 'lg2x' | 'lg3x' | 'xl' | 'xl2x' | 'xl3x',
-  imageSrc?: string,
-}
+export const avatarCornerTypeMap = {
+  sharp: 'rounded-none',
+  soft: 'rounded-lg',
+  smooth: 'rounded-full'
+};
+
 const avatarSizeMap = {
   xs3x: { width: 12, height: 12 },
   xs2x: { width: 16, height: 16 },
@@ -24,14 +25,28 @@ const avatarSizeMap = {
   xl3x: { width: 144, height: 144 },
 };
 
- const Avatar = ({ size='md', imageSrc }:AvatarProps) => {
-  const { width, height } = avatarSizeMap[size] || { width: 36, height: 36 }
+export type AvatarProps = {
+  size?: keyof typeof avatarSizeMap,
+  imageSrc?: string,
+  className?: string,
+  corner?: keyof typeof avatarCornerTypeMap;
+}
+
+ const Avatar = ({ 
+    size='md', 
+    imageSrc, 
+    corner='sharp', 
+    className
+  }:AvatarProps) => {
+  const { width, height } = avatarSizeMap[size] || { width: 36, height: 36 };
+  const cornerType = avatarCornerTypeMap[corner];
+
   const avatarComponent = imageSrc ? (
     <AvatarImage src={imageSrc} width={width} height={height}/>
   ) : <AvatarIcon width={width} height={height} />
 
   return (
-    <div className={`w=[${width}px] h-[${height}px]`}>
+    <div className={`w=[${width}px] h-[${height}px] ${className} ${cornerType} overflow-hidden`}>
       { avatarComponent }
     </div>
   )
