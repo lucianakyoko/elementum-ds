@@ -1,0 +1,68 @@
+import { Meta } from '@storybook/addon-docs';
+import Toggle from './Toggle';
+
+<Meta title='Design System/Molecules/ Toggle' />
+
+# Toggle
+<p>
+  A toggle is a user interface element that allows users to switch between two states, typically representing an on/off or enabled/disabled state. It consists of a graphical control, often resembling a small switch or button, that can be toggled between two positions to change the state of a particular feature, setting, or functionality.
+</p>
+
+## Exemplos
+### props
+- color
+- size
+- turnedOn
+
+
+<div className='pb-4'></div>
+
+### color values:
+<div className='flex items-center gap-6 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>primary</span>
+    <Toggle color='primary'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>secondary</span>
+    <Toggle color='secondary'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>tertiary</span>
+    <Toggle color='tertiary'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>positive</span>
+    <Toggle color='positive'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>negative</span>
+    <Toggle color='negative'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>warning</span>
+    <Toggle color='warning'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>dark</span>
+    <Toggle color='dark'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>disabled</span>
+    <Toggle color='disabled'/>
+  </div>
+</div>
+
+<div className='pb-4'></div>
+
+### size values:
+<div className='flex items-center gap-6 text-white'>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>small</span>
+    <Toggle size='small'/>
+  </div>
+  <div className='flex flex-col '>
+    <span className='text-slate-800'>medium</span>
+    <Toggle size='medium'/>
+  </div>
+</div>
