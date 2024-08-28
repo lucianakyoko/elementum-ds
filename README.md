@@ -17,7 +17,7 @@ Este é um projeto de prática utilizando o design system **Elementum 2.0** com 
 ---
 
 ## 📄 Atribuição
-Este projeto utiliza o design system **Elementum 2.0** disponível em [Figma Community](https://www.figma.com/community). De acordo com a licença [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), a atribuição ao autor original foi feita conforme abaixo:
+Este projeto utiliza o design system **Elementum 2.0** disponível em [Figma Community](https://www.figma.com/community). De acordo com a licença **CC BY 4.0** a atribuição ao autor original foi feita conforme abaixo:
 
 Design System: [Elementum 2.0](https://www.figma.com/community/file/1366156810458494400) <br>
 Autor: [Sajal Jahan](https://www.figma.com/@ruvojahan) <br>
@@ -26,3 +26,9 @@ Licença: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) <br>
 
 ---
 
+## 🎯 Preview
+<p align="center">
+  <img src=".github/image01.svg" alt="Preview da página" width="70%"/>
+  <img src=".github/image02.svg" alt="Preview da página" width="70%"/>
+  <img src=".github/image03.svg" alt="Preview da página" width="70%"/>
+</p>
